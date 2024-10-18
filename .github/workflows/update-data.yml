@@ -1,0 +1,45 @@
+# This workflow will update the theater.json file every minute
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Update Theater Data
+
+on:
+  push:
+  schedule:
+    # Runs the job every minute
+    - cron: "* * * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+    steps:
+    # Checkout the repository to access the files
+    - uses: actions/checkout@v2
+
+    # Setup Node.js environment
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    # Install dependencies
+    - run: npm ci
+
+    # Run the script to update the theater.json
+    - name: Run Update Script
+      run: node index.js
+
+    # Update theater.json file and push the changes
+    - name: Update theater.json on GitHub
+      uses: test-room-7/action-update-file@v1
+      with:
+        file-path: theater.json
+        commit-msg: Update theater.json
+        github-token: ${{ secrets.GH_TOKEN }}
+        branch: main
