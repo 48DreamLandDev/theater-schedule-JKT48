@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "axios": "^1.7.7",
+    "cheerio": "^1.0.0"
+  },
+  "name": "theater-schedule",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js",
+    "build": "node index.js"
+  },
+  "author": "Zeexsha",
+  "license": "ISC",
+  "description": ""
+}
