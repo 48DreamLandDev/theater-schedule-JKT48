@@ -50,5 +50,41 @@
       "Gendis Mayrannisa",
       "Jazzlyn Trisha"
     ]
+  },
+  {
+    "show_date": "Jumat, 1 November 2024 | 19:00 WIB",
+    "setlist": "Tunas di Balik Seragam",
+    "setlist_jp": "Seifuku no Me",
+    "description": "Satu lagi setlist yang dinanti dari JKT48 kini telah kembali. Seperti apakah warna dari para member JKT48 New Era ini pada saat membawakannya? Tentunya pertunjukan dengan penuh sisi energik dan perasaan dari member di setiap lagunya akan menggetarkan hatimu.",
+    "image": {
+      "banner": "https://res.cloudinary.com/dyad4ewsx/image/upload/v1723710050/48drl_snm_banner_igora1.png",
+      "poster": "https://res.cloudinary.com/dyad4ewsx/image/upload/v1723710050/48drl_snm_poster_txqfnv.png"
+    },
+    "birthday": "",
+    "lineups": []
+  },
+  {
+    "show_date": "Sabtu, 2 November 2024 | 19:00 WIB",
+    "setlist": "Pajama Drive",
+    "setlist_jp": "Pajama Drive",
+    "description": "Dengan penuh semangat dan keceriaan, Trainee JKT48 siap membawakan pertunjukan legendaris, yang pertama kali dibawakan pada tahun 2012 oleh Generasi 1 JKT48. Seperti apakah penampilan yang akan ditunjukkan oleh para generasi penerus? Mari bersama-sama rasakan energi yang luar biasa dari para member Trainee JKT48, dengan formasi yang jauh berbeda dari biasanya!",
+    "image": {
+      "banner": "https://res.cloudinary.com/dyad4ewsx/image/upload/v1723708198/48drl_pajama_banner_kluw81.jpg",
+      "poster": "https://res.cloudinary.com/dyad4ewsx/image/upload/v1723708198/48drl_pajama_poster_v9ldp5.jpg"
+    },
+    "birthday": "",
+    "lineups": []
+  },
+  {
+    "show_date": "Minggu, 3 November 2024 | 16:00 WIB",
+    "setlist": "Aturan Anti Cinta",
+    "setlist_jp": "Renai Kinshi Jourei",
+    "description": "Setlist legendaris telah kembali! Ini adalah pertunjukan yang menjadi langkah awal JKT48 saat pertama kali berdiri. Seperti apakah new era JKT48 membawakannya? Bersiaplah menyaksikan 16 lagu yang akan menggetarkan hatimu dengan beragam bentuk dari cinta.",
+    "image": {
+      "banner": "https://res.cloudinary.com/dyad4ewsx/image/upload/v1723707536/48drl_rkj_banner_knyfkp.png",
+      "poster": "https://res.cloudinary.com/dyad4ewsx/image/upload/v1723707723/48drl_rkj_poster_q9ecov.jpg"
+    },
+    "birthday": "Aurellia",
+    "lineups": []
   }
 ]
