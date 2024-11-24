@@ -56,5 +56,41 @@
       "Michelle Alexandra",
       "Mutiara Azzahra"
     ]
+  },
+  {
+    "show_date": "Kamis, 28 November 2024 | 19:00 WIB",
+    "setlist": "Pajama Drive",
+    "setlist_jp": "Pajama Drive",
+    "description": "Dengan penuh semangat dan keceriaan, Trainee JKT48 siap membawakan pertunjukan legendaris, yang pertama kali dibawakan pada tahun 2012 oleh Generasi 1 JKT48. Seperti apakah penampilan yang akan ditunjukkan oleh para generasi penerus? Mari bersama-sama rasakan energi yang luar biasa dari para member Trainee JKT48, dengan formasi yang jauh berbeda dari biasanya!",
+    "image": {
+      "banner": "https://res.cloudinary.com/dyad4ewsx/image/upload/v1723708198/48drl_pajama_banner_kluw81.jpg",
+      "poster": "https://res.cloudinary.com/dyad4ewsx/image/upload/v1723708198/48drl_pajama_poster_v9ldp5.jpg"
+    },
+    "birthday": "",
+    "lineups": []
+  },
+  {
+    "show_date": "Jumat, 29 November 2024 | 19:00 WIB",
+    "setlist": "Tunas di Balik Seragam",
+    "setlist_jp": "Seifuku no Me",
+    "description": "Satu lagi setlist yang dinanti dari JKT48 kini telah kembali. Seperti apakah warna dari para member JKT48 New Era ini pada saat membawakannya? Tentunya pertunjukan dengan penuh sisi energik dan perasaan dari member di setiap lagunya akan menggetarkan hatimu.",
+    "image": {
+      "banner": "https://res.cloudinary.com/dyad4ewsx/image/upload/v1723710050/48drl_snm_banner_igora1.png",
+      "poster": "https://res.cloudinary.com/dyad4ewsx/image/upload/v1723710050/48drl_snm_poster_txqfnv.png"
+    },
+    "birthday": "",
+    "lineups": []
+  },
+  {
+    "show_date": "Sabtu, 30 November 2024 | 16:00 WIB",
+    "setlist": "Cara Meminum Ramune",
+    "setlist_jp": "Ramune no Nomikata",
+    "description": "Pernahkah kamu meminum Ramune? Meskipun tidak bisa diminum sekaligus, tapi Ramune tetap dapat kita rasakan kesegarannya dalam setiap tetesnya. Seperti nikmatnya Ramune tersebut, para member JKT48 New Era siap untuk memberikanmu keceriaan dan semangat baru, melalui setiap lagu yang ada di dalam setlist Cara Meminum Ramune (Ramune no Nomikata) ini.",
+    "image": {
+      "banner": "https://res.cloudinary.com/dyad4ewsx/image/upload/v1723710050/48drl_ramune_banner_gwan76.png",
+      "poster": "https://res.cloudinary.com/dyad4ewsx/image/upload/v1723710134/48drl_ramune_poster_ha8et0.jpg"
+    },
+    "birthday": "",
+    "lineups": []
   }
 ]
