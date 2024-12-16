@@ -84,16 +84,13 @@ const getTheater = async () => {
             // setting details
             const setlist = $(element).find('td').eq(1).text().trim()
             let member = $(element).find('td').eq(2).find('a').map((i, el) => $(el).text().trim()).get()
-            const birthday = $(element).find('td').eq(2).find('a[style="color:#616D9D"]').text().trim()
+            const birthday = $(element).find('td').eq(2).find('a[style="color:#616D9D"]').map((i, el) => $(el).text().trim()).get().join(', ')
             
             const detail = await detail_theater(setlist)
             const poster = detail ? detail.poster : ''
             const banner = detail ? detail.banner : ''
             const setlist_jp = detail ? detail.title_jp : ''
             const description = detail ? detail.description : ''            
-            
-            // settings birthday
-            member.pop()
             
             // push to array
             data_theater.push({
