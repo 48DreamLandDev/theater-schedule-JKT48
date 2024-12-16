@@ -20,9 +20,10 @@
       "banner": "https://res.cloudinary.com/dyad4ewsx/image/upload/v1723710050/48drl_snm_banner_igora1.png",
       "poster": "https://res.cloudinary.com/dyad4ewsx/image/upload/v1723710050/48drl_snm_poster_txqfnv.png"
     },
-    "birthday": "Dena NataliaDesy Natalia",
+    "birthday": "Dena Natalia, Desy Natalia",
     "lineups": [
-      "Dena Natalia"
+      "Dena Natalia",
+      "Desy Natalia"
     ]
   },
   {
@@ -47,7 +48,9 @@
       "poster": "https://res.cloudinary.com/dyad4ewsx/image/upload/v1723707723/48drl_rkj_poster_q9ecov.jpg"
     },
     "birthday": "Amanda Sukma",
-    "lineups": []
+    "lineups": [
+      "Amanda Sukma"
+    ]
   },
   {
     "show_date": "Kamis, 26 Desember 2024 | 19:00 WIB",
@@ -59,7 +62,9 @@
       "poster": "https://res.cloudinary.com/dyad4ewsx/image/upload/v1723710134/48drl_ramune_poster_ha8et0.jpg"
     },
     "birthday": "Chelsea Davina",
-    "lineups": []
+    "lineups": [
+      "Chelsea Davina"
+    ]
   },
   {
     "show_date": "Jumat, 27 Desember 2024 | 19:00 WIB",
