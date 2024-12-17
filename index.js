@@ -92,7 +92,7 @@ const getTheater = async () => {
             const setlist_jp = detail ? detail.title_jp : ''
             const description = detail ? detail.description : ''            
 
-            if (member.length > 16) member.splice(-2);
+            if (member.length > 16) member.splice(16);
             
             // push to array
             data_theater.push({
