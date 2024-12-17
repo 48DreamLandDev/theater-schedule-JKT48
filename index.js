@@ -91,6 +91,8 @@ const getTheater = async () => {
             const banner = detail ? detail.banner : ''
             const setlist_jp = detail ? detail.title_jp : ''
             const description = detail ? detail.description : ''            
+
+            if (member.length > 16) member.splice(-2);
             
             // push to array
             data_theater.push({
