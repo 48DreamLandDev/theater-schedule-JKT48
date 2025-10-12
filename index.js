@@ -36,7 +36,7 @@ const detail_theater = (title) => {
             "banner": "https://res.cloudinary.com/dyad4ewsx/image/upload/v1725884210/48drl_twt_banner_smk1i9.jpg",
             "poster": "https://res.cloudinary.com/dyad4ewsx/image/upload/v1725884210/48drl_twt_poster_ycjmew.jpg",
             "title_jp": "Te Wo Tsunaginagara",
-            "description": ""
+            "description": "Dengan penuh gairah dan penuh energi, JKT48 New Era membawakan setlist 'Te wo Tsunaginagara' ke panggung dengan warna baru. Setlist yang dulu dirintis Team T pada 2015 ini kini hadir lagi, membawa nostalgia sekaligus semangat yang pernah di bawa oleh kakak-kakak nya. Siap-siap buat ikut terhanyut dalam energi ceria dan lagu-lagu ikonik yang dibawakan dengan sepenuh hati!"
         },
         "Ingin Bertemu": {
             "banner": "https://res.cloudinary.com/dyad4ewsx/image/upload/v1723710048/48drl_aitakatta_banner_pl4z4w.jpg",
@@ -49,6 +49,12 @@ const detail_theater = (title) => {
             "poster": "https://res.cloudinary.com/dyad4ewsx/image/upload/v1723708198/48drl_pajama_poster_v9ldp5.jpg",
             "title_jp": "Pajama Drive",
             "description": "Dengan penuh semangat dan keceriaan, Trainee JKT48 siap membawakan pertunjukan legendaris, yang pertama kali dibawakan pada tahun 2012 oleh Generasi 1 JKT48. Seperti apakah penampilan yang akan ditunjukkan oleh para generasi penerus? Mari bersama-sama rasakan energi yang luar biasa dari para member Trainee JKT48, dengan formasi yang jauh berbeda dari biasanya!"
+        },
+        "Pertaruhan Cinta": {
+            "banner": "https://res.cloudinary.com/dyad4ewsx/image/upload/v1759715696/48drl_PC_banner_oz03ke.png",
+            "poster": "https://res.cloudinary.com/dyad4ewsx/image/upload/v1760268952/48drl_PC_poster_w7og3v.png",
+            "title_jp": "Pertaruhan Cinta",
+            "description": "Setlist original pertama dari JKT48 akan hadir, jangan lupa untuk menyaksikan shonichi setlist Pertaruhan Cinta yang akan di bawakan oleh JKT48 New Era"
         }
     }
     return theater_data[title]
@@ -56,7 +62,21 @@ const detail_theater = (title) => {
 
 const getTheater = async () => {
     try {
-        const response = await axios.get("https://takagi.sousou-no-frieren.workers.dev/theater/schedule")
+        // FIX: tambahkan headers agar request diterima oleh server
+        const response = await axios.get("https://takagi.sousou-no-frieren.workers.dev/theater/schedule", {
+            headers: {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+                'Accept-Language': 'en-US,en;q=0.9',
+                'Referer': 'https://jkt48.com/',
+                'Cache-Control': 'no-cache'
+            },
+            // FIX: tambahkan timeout dan follow redirect
+            timeout: 15000,
+            maxRedirects: 5,
+            validateStatus: status => status >= 200 && status < 400 // jangan error kalau redirect
+        })
+
         const html = response.data
         const $ = cheerio.load(html)
         
@@ -118,7 +138,7 @@ const getTheater = async () => {
             console.log('Error writing theater data to theater.json')
         }
     } catch (error) {
-        console.log("Error get data")
+        console.log(error)
     }
 }
 
