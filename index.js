@@ -55,8 +55,13 @@ const detail_theater = (title) => {
             "poster": "https://res.cloudinary.com/dyad4ewsx/image/upload/v1760268952/48drl_PC_poster_w7og3v.png",
             "title_jp": "Pertaruhan Cinta",
             "description": "Setlist original pertama dari JKT48 akan hadir, jangan lupa untuk menyaksikan shonichi setlist Pertaruhan Cinta yang akan di bawakan oleh JKT48 New Era"
+        },
+        "KIRA KIRA GIRLS": {
+            "banner" : "https://res.cloudinary.com/dsyhy9nkc/image/upload/v1766653237/nxcb0602areoaqrulrmw.jpg",
+            "poster": "https://res.cloudinary.com/dsyhy9nkc/image/upload/v1766653261/cdqcr6nhuvem7bti1ia8.png",
+             "title_jp": "",
+            "description": "Para Trainee JKT48 siap melangkah ke babak baru. Sepanjang bulan ini, mereka akan menghadirkan setlist Special Show bertajuk “KIRA KIRA GIRLS”, sebuah tantangan yang membawa warna serta nuansa berbeda di JKT48 Theater. Pertunjukan spesial ini hanya akan berlangsung dalam periode terbatas hingga penghujung tahun 2025."   
         }
-    }
     return theater_data[title]
 }
 
@@ -146,3 +151,4 @@ async function main() {
     await getTheater()
 }
 main()
+
