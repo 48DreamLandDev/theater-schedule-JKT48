@@ -61,7 +61,7 @@ const detail_theater = (title) => {
             "poster": "https://res.cloudinary.com/dsyhy9nkc/image/upload/v1766653261/cdqcr6nhuvem7bti1ia8.png",
              "title_jp": "",
             "description": "Para Trainee JKT48 siap melangkah ke babak baru. Sepanjang bulan ini, mereka akan menghadirkan setlist Special Show bertajuk “KIRA KIRA GIRLS”, sebuah tantangan yang membawa warna serta nuansa berbeda di JKT48 Theater. Pertunjukan spesial ini hanya akan berlangsung dalam periode terbatas hingga penghujung tahun 2025."   
-        }
+        }}
     return theater_data[title]
 }
 
@@ -151,4 +151,5 @@ async function main() {
     await getTheater()
 }
 main()
+
 
